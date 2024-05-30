@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+    rel="stylesheet"
+  />
+  <title>recipe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<main class="pb-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
+  <header class="sticky top-0 z-50 shadow">
+    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+      <div
+        class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+      >
+        <a href="mainpage.html" class="flex items-center">
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            style="font-size: 1.5rem; font-weight: bold; color: #007aff;"
+            >Recipe World</span
+          >
+        </a>
+        <div class="flex items-center lg:order-2">
+          <a
+            href="login.html"
+            class="text-gray-800 dark:text-white dark:bg-gray-800 bg-gray-50 hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+            >로그인</a
+          >
+          <a
+            href="#"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 lg:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >구독</a
+          >
+        </div>
+        <div
+          class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+          id="mobile-menu-2"
+        ></div>
+      </div>
+    </nav>
+  </header>
+  <header class="py-12">
+    <div class="px-4 mx-auto w-full max-w-screen-xl text-center">
+      <span class="block mb-4 font-semibold text-gray-900 dark:text-white"
+        >글 작성 :
+        <time
+          class="font-normal text-gray-500 dark:text-gray-400"
+          pubdate
+          class="uppercase"
+          datetime="2022-03-08"
+          title="August 3rd, 2022"
+          >2024년 5월 23일 12시 22분</time
+        ></span
+      >
+      <h1
+        class="mx-auto mb-4 max-w-2xl text-2xl dark:text-white font-extrabold leading-none text-gray-900 sm:text-3xl lg:text-4xl"
+      >
+        규동 레시피
+      </h1>
+      <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+        <span class="difficulty"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+        일본의 대표요리!
+      </p>
+    </div>
+  </header>
+  <div
+    class="flex relative z-20 justify-between px-4 mx-auto max-w-screen-xl bg-white dark:bg-gray-900 rounded"
+  >
+    <article
+      class="xl:w-[828px] w-full max-w-none format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
+    >
+      <div
+        class="flex flex-col lg:flex-row justify-between lg:items-center py-6 border-t border-b border-gray-200 dark:border-gray-700"
+      >
+        <span
+          class="text-base mb-4 lg:mb-0 font-normal text-gray-500 dark:text-gray-400"
+          >By
+          <a
+            href="#"
+            rel="author"
+            class="font-bold text-gray-900 dark:text-white no-underline hover:underline"
+            >23조</a
+          >
+          in
+          <a href="#" class="font-normal text-gray-500 dark:text-gray-400 no-underline hover:underline">
+            Gachon University</a></span>
+        
+        <aside aria-label="Share social media">
+          <a
+            href="#"
+            class="inline-flex items-center py-2 px-6 mr-2 text-xs font-medium text-gray-900 no-underline bg-white rounded-lg border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            <svg
+              class="w-3 h-3 mr-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 8 19"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Share
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center py-2 px-6 mr-2 text-xs font-medium text-gray-900 no-underline bg-white rounded-lg border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            <svg
+              class="w-3 h-3 mr-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill="currentColor"
+                d="M12.186 8.672 18.743.947h-2.927l-5.005 5.9-4.44-5.9H0l7.434 9.876-6.986 8.23h2.927l5.434-6.4 4.82 6.4H20L12.186 8.672Zm-2.267 2.671L8.544 9.515 3.2 2.42h2.2l4.312 5.719 1.375 1.828 5.731 7.613h-2.2l-4.699-6.237Z"
+              />
+            </svg>
+            Tweet
+          </a>
+          <button
+            type="button"
+            class="inline-flex items-center py-2 px-6 text-xs font-medium text-gray-900 no-underline bg-white rounded-lg border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            <svg
+              class="w-3 h-3 mr-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 19 19"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"
+              />
+            </svg>
+            Copy link
+          </button>
+        </aside>
+      </div>
+      <div class="space-y-2 article my-6 dark:text-white">
+        <h1 class="text-xl font-bold">규동: 일본 가정의 인기 메뉴</h1>
+        <p>
+          규동은 달콤하고 짭짤한 소스로 양념된 소고기가 양파와 함께 볶아내어 일본 가정에서 자주 먹는 대표적인 요리입니다. 
+          주 재료인 소고기와 양파가 어우러져 진한 맛을 느낄 수 있으며, 밥과 함께 먹으면 더욱 맛있습니다.
+        </p>
+      
+        <h2 class="text-xl font-bold">재료</h2>
+        <ul class="list-disc ml-4">
+          <li>소고기 (얇게 썬 것) 500g</li>
+          <li>양파 1개</li>
+          <li>다시마 1조각</li>
+          <li>생강 약간 (갈아놓은 것)</li>
+          <li>설탕 2큰술</li>
+          <li>간장 4큰술</li>
+          <li>미림 2큰술</li>
+          <li>사케 2큰술</li>
+          <li>물 1컵</li>
+          <li>식용유 2큰술</li>
+        </ul>
+      
+        <div class="text-center my-4">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAxMzBfNzQg%2FMDAxNzA2NTkxNDMxMDk2.03ICYGezndxZnqtJ3WPMnvTmFRnAJ5XffSqe5rCrh5Yg.bJgAAvoiQwLoiqYBUIA1s3_kGoDR1l5ZyAzUgzd3rzMg.JPEG.jk99791%2Foutput_2085812083.jpg&type=a340" alt="규동" style="width: 700px; height: 500px;">
+        </div>
+      
+        <h2 class="text-xl font-bold">만드는 법</h2>
+        <ol class="space-y-2">
+          <li>
+            <strong>재료 손질하기:</strong>
+            <p>
+              소고기는 얇게 썰어주고, 양파는 채 썰어줍니다. 
+              생강은 미리 갈아둡니다.
+            </p>
+          </li>
+          <li>
+            <strong>양념 만들기:</strong>
+            <p>
+              간장, 설탕, 미림, 사케, 물을 섞어 양념을 만들어줍니다.
+            </p>
+          </li>
+          <li>
+            <strong>볶기:</strong>
+            <p>
+              팬에 식용유를 두르고 양파와 갈아놓은 생강을 볶은 뒤 소고기를 넣고 익힙니다. 
+              그 후 양념장을 넣고 다시마를 추가하여 모든 재료가 고루 섞이고 익을 때까지 끓여줍니다.
+            </p>
+          </li>
+          <li>
+            <strong>마무리:</strong>
+            <p>
+              접시에 밥을 담고 그 위에 볶은 소고기와 양파를 얹어 맛있게 즐겨보세요!
+            </p>
+          </li>
+        </ol>
+      
+        <p>
+          규동은 일본 가정에서 자주 먹는 인기 메뉴로, 달콤하고 짭짤한 맛과 함께 고기와 양파의 조화가 어우러져 맛있게 먹을 수 있습니다.
+        </p>
+    </div>
+      <div
+        class="flex justify-between items-center py-6 border-t border-b border-gray-200 dark:border-gray-700"
+      >
+        <aside aria-label="Share social media">
+          <a
+            href="#"
+            class="inline-flex items-center py-2 px-6 mr-2 text-xs font-medium text-gray-900 no-underline bg-white rounded-lg border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            <svg
+              class="w-3 h-3 mr-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 8 19"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Share
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center py-2 px-6 mr-2 text-xs font-medium text-gray-900 no-underline bg-white rounded-lg border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            <svg
+              class="w-3 h-3 mr-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill="currentColor"
+                d="M12.186 8.672 18.743.947h-2.927l-5.005 5.9-4.44-5.9H0l7.434 9.876-6.986 8.23h2.927l5.434-6.4 4.82 6.4H20L12.186 8.672Zm-2.267 2.671L8.544 9.515 3.2 2.42h2.2l4.312 5.719 1.375 1.828 5.731 7.613h-2.2l-4.699-6.237Z"
+              />
+            </svg>
+            Tweet
+          </a>
+          <button
+            type="button"
+            class="inline-flex items-center py-2 px-6 text-xs font-medium text-gray-900 no-underline bg-white rounded-lg border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            <svg
+              class="w-3 h-3 mr-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 19 19"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"
+              />
+            </svg>
+            Copy link
+          </button>
+        </aside>
+        <div class="not-format">
+          <button
+            data-tooltip-target="tooltip-save"
+            class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-gray-400 focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600"
+            type="button"
+          >
+            <svg
+              class="w-4 h-4"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m13 19-6-5-6 5V2a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17Z"
+              />
+            </svg>
+          </button>
+          <div
+            id="tooltip-save"
+            role="tooltip"
+            class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
+          >
+            Save this article
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <button
+            id="dropdownMenuIconHorizontalButton"
+            data-dropdown-toggle="dropdownDotsHorizontal"
+            class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-gray-400 focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600"
+            type="button"
+          >
+            <svg
+              class="w-4 h-4"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 16 3"
+            >
+              <path
+                d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"
+              />
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdownDotsHorizontal"
+            class="hidden z-10 w-36 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
+          >
+            <ul
+              class="py-1 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownMenuIconHorizontalButton"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Mute this author</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Report</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+    <aside class="hidden xl:block" aria-labelledby="sidebar-label">
+      <div class="xl:w-[336px] sticky top-6">
+        <h3 id="sidebar-label" class="sr-only">Sidebar</h3>
+        <div
+          class="p-4 mb-6 rounded-lg border border-gray-200 dark:border-gray-700"
+        >
+          <h4
+            class="mb-2 text-sm font-bold text-gray-900 dark:text-white uppercase"
+          >
+          Sign up for our newsletter
+          </h4>
+          <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
+            저희가 소개하는 레시피를 꾸준히 받아보고 싶다면 이메일 주소를 입력해주세요!
+          </p>
+          <form action="#">
+            <label for="email-address-icon" class="sr-only">Your Email</label>
+            <div class="relative mb-4">
+              <div
+                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 16"
+                >
+                  <path
+                    d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"
+                  />
+                  <path
+                    d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"
+                  />
+                </svg>
+              </div>
+              <input
+                required
+                type="text"
+                id="email-address-icon"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-9 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="name@company.com"
+              />
+            </div>
+            <button
+              type="submit"
+              class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 text-center w-full"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+        <div
+          class="p-4 mb-6 rounded-lg border border-gray-200 dark:border-gray-700"
+        >
+          <h4
+            class="mb-4 text-sm font-bold text-gray-900 dark:text-white uppercase"
+          >
+          팀원 소개
+        </h4>
+        <div class="mb-6">
+          <h5
+            class="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white"
+          >
+          202434755 김현승
+          </h5>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            메인페이지 제작, 로그인 및 즐겨찾기 페이지 만들기
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+          >
+            
+          </a>
+        </div>
+        <div class="mb-6">
+          <h5
+            class="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white"
+          >
+          202434793 오윤성
+          </h5>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            서브 페이지 제작 (레시피 추가하기, 커뮤니티)
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+          >
+           
+          </a>
+        </div>
+        <div class="mb-6">
+          <h5
+            class="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white"
+          >
+          202434842 조재희
+          </h5>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            서브 페이지 제작 (레시피 소개하기)
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+          >
+           
+          </a>
+        </div>
+        </div>
+        <div>
+          
+          <!-- <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+            무슨말 넣어야 할지 생각중....
+          </p> -->
+          <!-- <p
+            class="text-xs font-medium text-gray-400 uppercase dark:text-gray-500"
+          >
+            Ads placeholder
+          </p> -->
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<aside
+  aria-label="Related articles"
+  class="py-8 lg:py-24 bg-gray-50 dark:bg-gray-800 antialiased"
+>
+  <div class="px-4 mx-auto max-w-screen-xl">
+    <h2 class="mb-8 text-2xl font-bold text-gray-900 dark:text-white">
+      Read next
+    </h2>
+    <article class="flex mb-8">
+      <a href="김치찌개.html" class="shrink-0">
+        <img
+          src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEwMTdfMjM2%2FMDAxNjk3NTMyMDQ2ODY1.OL-d27f8ZcmfJIGz9l3PG20mbHKEbm9s29rtfzQCzsAg.vy7qQO-Jq47XYw1OTi0ctQByeTvKu7k_03AoIsncOv4g.PNG.yunzzi0227%2F%25B1%25E8%25C4%25A14.PNG&type=a340"
+          class="mr-5 w-32 h-32 max-w-fullalign-middle rounded-full"
+          alt="Image 1"
+        />
+      </a>
+      <div class="flex flex-col justify-center">
+        <h2
+          class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white"
+        >
+          <a href="김치찌개.html">김치찌개</a>
+        </h2>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          김치찌개는 한국의 대표적인 전통 음식으로, 매콤하고 고소한 김치와 다양한 재료를 함께 끓여 만든 깊은 맛이 특징입니다.
+        </p>
+        <a
+          href="김치찌개.html"
+          class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+        >
+          전체 내용 보기
+        </a>
+      </div>
+    </article>
+    <article class="flex mb-8">
+      <a href="제육볶음.html" class="shrink-0">
+        <img
+          src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA5MjdfNzIg%2FMDAxNjk1ODIzNjMwNjE2.a5gjifoB3XgU8W_iKLVMuM6ByhdwZMm1V-1vCYhkTmMg.JHz0fKdOYPn3OTFHFN4J7HAeW2IdCjqoNpnq1xu1Emsg.JPEG.chanchan0908%2Fbatch_IMG_8800.JPG&type=a340"
+          class="mr-5 w-32 h-32 max-w-full align-middle rounded-full"
+          alt="Image 2"
+        />
+      </a>
+      <div class="flex flex-col justify-center">
+        <h2
+          class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white"
+        >
+          <a href="제육볶음.html">제육볶음</a>
+        </h2>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          제육볶음은 돼지고기에 고추장 기반으로 만든 양념장을 넣고 볶아서 만든 음식으로 흔히 남자들이 좋아하는 대표적인 음식 중 하나입니다. 
+        </p>
+        <a
+          href="제육볶음.html"
+          class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+        >
+          전체 내용 보기
+        </a>
+      </div>
+    </article>
+    <article class="flex">
+      <a href="된장찌개.html" class="shrink-0">
+        <img
+          src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20230804_85%2F1691113282182YMMgv_JPEG%2F2892555991193608_1267704138.jpg&type=a340"
+          class="mr-5 w-32 h-32 max-w-full align-middle rounded-full"
+          alt="Image 3"
+        />
+      </a>
+      <div class="flex flex-col justify-center">
+        <h2
+          class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white"
+        >
+          <a href="된장찌개.html">된장찌개</a>
+        </h2>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          된장찌개는 한국의 전통적인 요리 중 하나로, 고추장, 된장, 각종 채소 등을 함께 끓여 만든 감칠맛이 풍부한 찌개입니다.
+        </p>
+        <a
+          href="된장찌개.html"
+          class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+        >
+          전체 내용 보기
+        </a>
+      </div>
+    </article>
+  </div>
+</aside>
+
+<section class="bg-white dark:bg-gray-900 antialiased">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <div class="mx-auto max-w-screen-md sm:text-center">
+      <h2
+        class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
+      >
+        Sign up for our newsletter
+      </h2>
+      <p
+        class="mx-auto mb-8 max-w-2xl text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400"
+      >
+      추가적인 정보나 레시피에 관한 질문이 있으시면 언제든지 이메일을 통해 저희에게 연락 주시길 바랍니다. 
+      우리는 여러분이 요리를 더욱 즐겁게 즐길 수 있도록 최선을 다하겠습니다! 
+      이메일 주소를 남겨주시면 우리의 레시피에 대한 더 많은 세부 정보를 제공해드리겠습니다.
+      </p>
+      <form action="#">
+        <div
+          class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0"
+        >
+          <div class="relative w-full">
+            <label
+              for="email"
+              class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Email address</label
+            >
+            <div
+              class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 16"
+              >
+                <path
+                  d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"
+                />
+                <path
+                  d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"
+                />
+              </svg>
+            </div>
+            <input
+              class="block p-3 pl-9 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              placeholder="Enter your email"
+              type="email"
+              id="email"
+              required=""
+            />
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+        <div
+          class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300"
+        >
+          We care about the protection of your data.
+          <a
+            href="#"
+            class="font-medium text-primary-600 dark:text-primary-500 hover:underline"
+            >Read our Privacy Policy</a
+          >.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-50 dark:bg-gray-800 antialiased">
+  <div class="p-4 py-6 mx-auto max-w-screen-xl md:p-8 lg:p-10">
+    <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+      <div>
+        <h2
+          class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+        >
+        
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <div class="text-center">
+      <a
+        href="#"
+        class="flex justify-center items-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white"
+      >
+        <svg
+          class="mr-2 h-8"
+          viewBox="0 0 33 33"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M25.2696 13.126C25.1955 13.6364 24.8589 14.3299 24.4728 14.9328C23.9856 15.6936 23.2125 16.2264 22.3276 16.4114L18.43 17.2265C17.8035 17.3575 17.2355 17.6853 16.8089 18.1621L14.2533 21.0188C13.773 21.5556 13.4373 21.4276 13.4373 20.7075C13.4315 20.7342 12.1689 23.9903 15.5149 25.9202C16.8005 26.6618 18.6511 26.3953 19.9367 25.6538L26.7486 21.7247C29.2961 20.2553 31.0948 17.7695 31.6926 14.892C31.7163 14.7781 31.7345 14.6639 31.7542 14.5498L25.2696 13.126Z"
+            fill="url(#paint0_linear_11430_22515)"
+          />
+          <path
+            d="M23.5028 9.20133C24.7884 9.94288 25.3137 11.0469 25.3137 12.53C25.3137 12.7313 25.2979 12.9302 25.2694 13.1261L28.0141 14.3051L31.754 14.5499C32.2329 11.7784 31.2944 8.92561 29.612 6.65804C28.3459 4.9516 26.7167 3.47073 24.7581 2.34097C23.167 1.42325 21.5136 0.818599 19.8525 0.486816L17.9861 2.90382L17.3965 5.67918L23.5028 9.20133Z"
+            fill="url(#paint1_linear_11430_22515)"
+          />
+          <path
+            d="M1.5336 11.2352C1.5329 11.2373 1.53483 11.238 1.53556 11.2358C1.67958 10.8038 1.86018 10.3219 2.08564 9.80704C3.26334 7.11765 5.53286 5.32397 8.32492 4.40943C11.117 3.49491 14.1655 3.81547 16.7101 5.28323L17.3965 5.67913L19.8525 0.486761C12.041 -1.07341 4.05728 3.51588 1.54353 11.2051C1.54233 11.2087 1.53796 11.2216 1.5336 11.2352Z"
+            fill="url(#paint2_linear_11430_22515)"
+          />
+          <path
+            d="M19.6699 25.6538C18.3843 26.3953 16.8003 26.3953 15.5147 25.6538C15.3402 25.5531 15.1757 25.4399 15.0201 25.3174L12.7591 26.8719L10.8103 30.0209C12.9733 31.821 15.7821 32.3997 18.589 32.0779C20.7013 31.8357 22.7995 31.1665 24.7582 30.0368C26.3492 29.1191 27.7 27.9909 28.8182 26.7195L27.6563 23.8962L25.7762 22.1316L19.6699 25.6538Z"
+            fill="url(#paint3_linear_11430_22515)"
+          />
+          <path
+            d="M15.0201 25.3175C14.0296 24.5373 13.4371 23.3406 13.4371 22.0588V21.931V11.2558C13.4371 10.6521 13.615 10.5494 14.1384 10.8513C13.3323 10.3864 11.4703 8.79036 9.17118 10.1165C7.88557 10.858 6.8269 12.4949 6.8269 13.978V21.8362C6.8269 24.775 8.34906 27.8406 10.5445 29.7966C10.6313 29.874 10.7212 29.9469 10.8103 30.0211L15.0201 25.3175Z"
+            fill="url(#paint4_linear_11430_22515)"
+          />
+          <path
+            d="M28.6604 5.49565C28.6589 5.49395 28.6573 5.49532 28.6589 5.49703C28.9613 5.83763 29.2888 6.23485 29.6223 6.68734C31.3648 9.05099 32.0158 12.0447 31.4126 14.9176C30.8093 17.7906 29.0071 20.2679 26.4625 21.7357L25.7761 22.1316L28.8181 26.7195C34.0764 20.741 34.09 11.5388 28.6815 5.51929C28.6789 5.51641 28.67 5.50622 28.6604 5.49565Z"
+            fill="url(#paint5_linear_11430_22515)"
+          />
+          <path
+            d="M7.09355 13.978C7.09354 12.4949 7.88551 11.1244 9.17113 10.3829C9.34564 10.2822 9.52601 10.1965 9.71002 10.1231L9.49304 7.38962L7.96861 4.26221C5.32671 5.23364 3.1897 7.24125 2.06528 9.83067C1.2191 11.7793 0.75001 13.9294 0.75 16.1888C0.75 18.0243 1.05255 19.7571 1.59553 21.3603L4.62391 21.7666L7.09355 21.0223V13.978Z"
+            fill="url(#paint6_linear_11430_22515)"
+          />
+          <path
+            d="M9.71016 10.1231C10.8817 9.65623 12.2153 9.74199 13.3264 10.3829L13.4372 10.4468L22.3326 15.5777C22.9566 15.9376 22.8999 16.2918 22.1946 16.4392L22.7078 16.332C23.383 16.1908 23.9999 15.8457 24.4717 15.3428C25.2828 14.4782 25.5806 13.4351 25.5806 12.5299C25.5806 11.0468 24.7886 9.67634 23.503 8.93479L16.6911 5.00568C14.1436 3.53627 11.0895 3.22294 8.29622 4.14442C8.18572 4.18087 8.07756 4.2222 7.96875 4.26221L9.71016 10.1231Z"
+            fill="url(#paint7_linear_11430_22515)"
+          />
+          <path
+            d="M20.0721 31.8357C20.0744 31.8352 20.0739 31.8332 20.0717 31.8337C19.6252 31.925 19.1172 32.0097 18.5581 32.0721C15.638 32.3978 12.7174 31.4643 10.5286 29.5059C8.33986 27.5474 7.09347 24.7495 7.09348 21.814L7.09347 21.0222L1.59546 21.3602C4.1488 28.8989 12.1189 33.5118 20.0411 31.8421C20.0449 31.8413 20.0582 31.8387 20.0721 31.8357Z"
+            fill="url(#paint8_linear_11430_22515)"
+          />
+          

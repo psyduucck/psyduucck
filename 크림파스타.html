@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+    rel="stylesheet"
+  />
+  <title>recipe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<main class="pb-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
+  <header class="sticky top-0 z-50 shadow">
+    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+      <div
+        class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+      >
+        <a href="mainpage.html" class="flex items-center">
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            style="font-size: 1.5rem; font-weight: bold; color: #007aff;"
+            >Recipe World</span
+          >
+        </a>
+        <div class="flex items-center lg:order-2">
+          <a
+            href="login.html"
+            class="text-gray-800 dark:text-white dark:bg-gray-800 bg-gray-50 hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+            >로그인</a
+          >
+          <a
+            href="#"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 lg:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >구독</a
+          >
+        </div>
+        <div
+          class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+          id="mobile-menu-2"
+        ></div>
+      </div>
+    </nav>
+  </header>
+  <header class="py-12">
+    <div class="px-4 mx-auto w-full max-w-screen-xl text-center">
+      <span class="block mb-4 font-semibold text-gray-900 dark:text-white"
+        >글 작성 :
+        <time
+          class="font-normal text-gray-500 dark:text-gray-400"
+          pubdate
+          class="uppercase"
+          datetime="2022-03-08"
+          title="August 3rd, 2022"
+          >2024년 5월 23일 12시 22분</time
+        ></span
+      >
+      <h1
+        class="mx-auto mb-4 max-w-2xl text-2xl dark:text-white font-extrabold leading-none text-gray-900 sm:text-3xl lg:text-4xl"
+      >
+        크림파스타 레시피
+      </h1>
+      <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+        <span class="difficulty"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+        부드러운 크림소스와 쫄깃한 면발이 어우러져 입안 가득 행복이 퍼지는 맛있는 요리!
+      </p>
+    </div>
+  </header>
+  <div
+    class="flex relative z-20 justify-between px-4 mx-auto max-w-screen-xl bg-white dark:bg-gray-900 rounded"
+  >
+    <article
+      class="xl:w-[828px] w-full max-w-none format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
+    >
+      <div
+        class="flex flex-col lg:flex-row justify-between lg:items-center py-6 border-t border-b border-gray-200 dark:border-gray-700"
+      >
+        <span
+          class="text-base mb-4 lg:mb-0 font-normal text-gray-500 dark:text-gray-400"
+          >By
+          <a
+            href="#"
+            rel="author"
+            class="font-bold text-gray-900 dark:text-white no-underline hover:underline"
+            >23조</a
+          >
+          in
+          <a href="#" class="font-normal text-gray-500 dark:text-gray-400 no-underline hover:underline">
+            Gachon University</a></span>
+        
+        <aside aria-label="Share social media">
+          <a
+            href="#"
+            class="inline-flex items-center py-2 px-6 mr-2 text-xs font-medium text-gray-900 no-underline bg-white rounded-lg border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            <svg
+              class="w-3 h-3 mr-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 8 19"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Share
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center py-2 px-6 mr-2 text-xs font-medium text-gray-900 no-underline bg-white rounded-lg border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            <svg
+              class="w-3 h-3 mr-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill="currentColor"
+                d="M12.186 8.672 18.743.947h-2.927l-5.005 5.9-4.44-5.9H0l7.434 9.876-6.986 8.23h2.927l5.434-6.4 4.82 6.4H20L12.186 8.672Zm-2.267 2.671L8.544 9.515 3.2 2.42h2.2l4.312 5.719 1.375 1.828 5.731 7.613h-2.2l-4.699-6.237Z"
+              />
+            </svg>
+            Tweet
+          </a>
+          <button
+            type="button"
+            class="inline-flex items-center py-2 px-6 text-xs font-medium text-gray-900 no-underline bg-white rounded-lg border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            <svg
+              class="w-3 h-3 mr-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 19 19"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"
+              />
+            </svg>
+            Copy link
+          </button>
+        </aside>
+      </div>
+      <div class="space-y-2 article my-6 dark:text-white">
+        <h1 class="text-xl font-bold">크림 파스타: 부드럽고 풍미 가득한 이탈리아 요리</h1>
+<p>
+  크림 파스타는 이탈리아의 대표적인 요리 중 하나로, 집에서 쉽게 만들 수 있는 매우 인기 있는 음식입니다. 
+  주 재료는 신선한 크림과 파스타면이며, 간단한 양념과 다양한 야채 및 해산물 또는 고기와 함께 조리됩니다. 
+  크림의 부드러운 풍미와 다양한 재료가 어우러져 진한 소스가 특징이며, 다양한 버전으로 변주할 수 있어 많은 이들이 즐겨찾는 음식 중 하나입니다.
+</p>
+
+<h2 class="text-xl font-bold">재료</h2>
+<ul class="list-disc ml-4">
+  <li>파스타면 200g</li>
+  <li>생크림 200ml</li>
+  <li>양파 1개</li>
+  <li>마늘 2쪽</li>
+  <li>베이컨 100g</li>
+  <li>버섯 100g</li>
+  <li>올리브 오일 2큰술</li>
+  <li>파마산 치즈 50g</li>
+  <li>소금 약간</li>
+  <li>후추 약간</li>
+  <li>파슬리 약간 (다진 것)</li>
+</ul>
+<div class="text-center my-4">
+  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTExQWFhUWFx0YGBgWGBgYHhsaGBoYFxgYHRoYHSggGh0lHRgWITEhJSkrLi4uGh8zODMtNygtLisBCgoKDg0OGxAQGy0mICUtLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAADAAECBAUGB//EAEMQAAECBAMFBQUGBAUEAwEAAAECEQADITEEEkEFIlFhcQYTMoGRobHB0fAHI0JSYuEUM3LxU5KistIkQ4LCFlSTFf/EABgBAAMBAQAAAAAAAAAAAAAAAAECAwAE/8QAJREAAgIBBAICAwEBAAAAAAAAAAECESEDEjFBIlFCYTKBsXGh/9oADAMBAAIRAxEAPwDjEPlP3lXG86Tw8v7xNaTutMI4+Het7OnGBIAyeBV7MH+UTUA6d0uwIomlvkLRI6mFS+YkrLNQbtCw8+N+MNLSvLVW84qybdLRBDOohJdiScor0a+kD7qX3eXIcpUC2X3h3aGSFZZyq3WILAPQfQ8oJIkTFLIAzEvlATUnQc4Ls7ZCsRNloQh1AAuUlkjiVOyRS1TwePTeznZmThHUkBU1XimG/RP5R74ZKxZTr/TI7M9jcoC8WEqVcS0jdH9XE8rdY39r9nZOIRlypQseBaUgFJFgWunl6QXbW2pGESFzl5XLAAFSj0SKtzg+zNoS56BMlKCkn6Yg1BhsEbfJ4/jsLOlTZsqakJUgFvFvcGOru4Iigpa8j5Ekk+HMRxrm8o9i7Udnk4uWWZM5KSEKt/4qPB9dPUHyXaOEmSCZc0qlqBqVqZ6GxNxzEK1RaMrQNaznSMos7lVrlm1/eIy1MF7jMGYEVqRqI0tn7ExE8gykzFJ1tl1Dur5x0OB+z/EKBM2clBNmAWR6AD2mBQW0mccfCn7vUsxS4rzDekFWB3n8s5vzbrWtxj0XDdgpCQM82Ys6+BL/AOkxoI7LYRLfdO2qiSffBoG9HkspCMih3Sglw6SAS9GNDyPpD5EfduhVGy0cAOKFjTSPW/8A43g/8BPkVD2AxBXZfBn/ALPopXzjUbejypKZeZZANUnOySP7+UQPdd3UkJcsWWC9XpcefKPT53Y7CmqTMRpQgj2h/bGTjuw8wJPczZa3eiwpF/1DNAoO9HIZk94mpzN4d5ta1peIycgC/vFM43syqGlH00jXxuw8TJUCqSco/GlWYa8KARmSyreOQaUCnd21b6aAPgg4Il/eMaUzeK2msScZlfeuw/MNy9+H7Q5U6Ubv5auKVFKj2iHcZlbh8LHw1q9G6axgkFD7uk2rmro3qmnwpBChWcHPusWSct6Ec/7wMpBlVQpiVMGRQuan9onNy94+QuxdTBiN1xx09kYAyUzSFAL3nNcqCGYaWiTLTkIbLqwDux1iuZcrIoGWrK7swvluwPuiSpcvNLJSc2hA0IVq/B4ICylE11k5SaZd02rcO51gZVMKUMAzpzUVSxLHQO9DAkiW8zxM4zbqnB5NfyhKyBMreVVsviOZ8viajs14wTQ/hP1QohnPD2ftChcD+RiGWtvwlT13aej3hwFOKhqA7pOuh0iuru8gP4HpuqZ97TyghUjMAfEwYMrnWMTCJzDNbVgEmvWtbRudm+zc/FMd1CAreVlUzcEgmqvYI55Kpe9Wz5vE4qX5PePcdmCX3SO6bu8oyNbK1OvWGSJzlSwPszZ0uQgS5aWA9SeJOpjD7Vdrk4YKlycq5wFX8KOvE8vWNTtOqeMLMOH8YDlvFkrmy/q/dqtHimcHNvkkv+J2cmvvhm+hIRTyy3jdoTZhK5hzLUaus8Dq1uUdj9m+HxHeqmM0jJlUSaFQO6EjUjjziHZXsMqZlm4kqSl3CHqoaZvyp5XPKPRpUsJASkBKQGAFABGSGlLokISwD4gD1APvhiYiVQSYQqiBVESqIlUKEkTA1GGKogpUCw0OTDExAqhs8azUSJhs0ReGJjWGgqZpEUdobKkT3zJyrI/mIZKvaClXmDFh4Z41go43anZGfKCTJWZssNmASnN1I/4xgCUvMp1XG6ClNC7Va/nwj1SXNItGftXYGHxOZRSlE1QqsDxf1gNmve8EdT9nnKpcwyyAQ4JzboYhzatIlNQsLHhyl2LVel+V6QfbOx/4UCXNQzKJQoJzJLlwQ1hX5xTUiX3jsc2UvuqFN3WxNoBRUOmXNAVRGZ/ylmYaO7wykrUUUTls7EEUOrs1oAUSsqqnKCfwrBByjS4ic3I6Kl9AymLBVeD3LRjB3WCvdS9GG9UVv+0CdYTLdIq2beJy20184ikI+8ZSrh6roX01HlA1KBEvfIZmZSt616b3nxgmNX+N/V/phQzI/Ir2woOQeJgLJYBhf85DUOtzYQiTmdrAF8x5m0TURRlEVL7wrSw+tIYXqotQUI5vE7DQPRVOL77vU+jx2vYHtB3ahh5lEqP3Zd2VfK/A6c+ojii7eI6t4T0+jE6uGUXf9LwbFcU0e9oVGRI7L4RE9U9MoZ1HM34Qo1KgmwJNYj2S2mcRhkLPiG4r+pNH8wx842opZDKETECqGUqBqVAs1EiqIlUDUuIFcK2NQQriJmQ2ZIDrLCAp2pLzAJSSOQfp8YVyS5YUn0gpXESqDmaCzA0PTyMTzZk1Tlcas4+EbHsxQWtoGZo1IHXWLS0pAYsVNwZy3sjjpfaBZxSpRSAlILhqhg7vEpz2jxVnR/xNzpyr7ImMRxg2HkpZK7lQB9jwWdiAC1FUsDUHTdAtcvDJ+xtoHNCeCzEApChpdhfy1gFCApJdJ1+B4Q1iNDvDhUDeHeDYKC4iTLnIMqanMg+oPEHQxwXaDZE3DzEgsqWXKFgKDsxY6BV6R3QMEmS0TUGVMDoVfQg6EHQjjDJ2ZPaeVqUrfolw9N7gNbxBS1AJoGd3JNKE2PpGht7ZasLMUhayAd5CyojMkhqH3jQiMpRG795r4c1wx/v5QaK3gmFqdVEhm1If2UgEyYcqKA2pmbLUGnFoYqv95wrmFIqTZng+8/qqN+ot+3GCA0+7P5k+ohRS78fRhQMB3MipAo4Ny1BwPweEwKiyS7DSmred4mSXamruDw/tCSFVs1OPz6RMJWUlOU7tC705166w8xAcAp1pungdIKUKy6PoA/GkbXZjZCsTikII3E70whwyRp1JYefKChXhHd/Z7gTKwgUoMZijMZmoQEgtzCX846JSoUwtQUAoAIrKXD8EOSa1wFS4guZFdS3hHIZIMqZEUqcwKWHMPjZKlIKUHKaVFCzhw+hIpE3KhqGxGCKi5VTnFqTLygVpAdk4EqQkzwStzrYPQFqEszxY2ng5hYIIY/iP4eo1ibjKt1DKSeAsiYlSmTXiYtADUxgYjEfwctShvqJSC9A5OVy1qEluUNJxicQlkzB3gDqBdgdQ8aMpKNtZFbju22b0yQ7VSfL6aMTa2HkhaArIla3COJ5V86awD+Cn71TQ1KS7Uf66xi7Q2TOViZailasrMo+EXJc8r9YSWo2vwZTbXEkb+F2mmWUy13rpSgu+gaNPBTEE5kpGY3LB26xxmKkIViAmaVDI6EqBYVFTatTGxImTMMlZUFLCElmHiAs3WBDVlf0U2qnZszMXLCyKJABNWALa+/0ijs7EJUZi0kFBcgggh0mOdTh14glQW1Xpz0ppeLex54wqDKmlypalMkUAUfdBjq7nb4JTkqwbaxqLGGELAFCgVy1BcvkXZqKHxgk6WAaR0rixLRAQRJgcTEMAjtPZ6cVJMpTZry1FqK4V0Nj+0eX4mSpBCVIKVJVlLkUIBDF+jPHqqC0c3292apQRiUFg4TNDDgQhb+iT5Q6dhg6dHDzHCiyTUDhzjLxChu7h5eGlr8P2jWm4eY5cgmjUHO8ZWKlzKVFPFQez2waHJ/xa/oD5Q8U8o/MfQfOFGyAvkIcV40dQeGlBNX5amJKUcwLVIOo5QyZhL0uRcitOcRHBqy5fFd65j9CPWfs/2YJOG7w+KcczuTuCiKnzPnHmOzMOqcuVKCTvqSnSgJDmnC8e45QlISKABh0FBFIk9R9AZqoqzFQacYqrMBsmgUxUDzRPK5ijtTZkxa0FExSCk2uC/EROV1aGb9GoZgSAXdyz9YLJlGpgUnDENWiR7eMNjpi0pdJ9kTbrykhlnCNHCuQ2gJgiJiSN3eFnFRdr8j8YpI2oABmDE8OMc52l7TmSUCSzBZz5RYgEgNYgk1rpF1ONEpprLNDttIJkoCcqVlYLEEhQSCSKW6tpzjmOzGJBmqSrdIZe7+WxzFrOXfnHTpxQmoStSpSgkMVJUN0kjMliWoAz3PDjz+C7SrzlPckoJYICQHSKZn4WqY59VW7fBrhGpdnQYzGzAZaJW9wsRcM/IjWMtHaCfnmykKSVImLS5Y0Cso5cNIv4XtB3kpS5UokoIcBjQ6gC2sVkYjvcxlykGYoOQQkEOAaqF6v7LQkk1mLM2pdm2vComIzoCDPShwfw5jY+oNWjO2biBPQrDTycxBylVzx9D9Uix2dUvDoWZqZaUmpUl8xIYBx0e37xbmSUTRnlq31AlBOj7pOW4qkw6tpNc9r2Nab7OVXsOfLWnKoDIGYEhNgAojWgdjxjbXg0z6TQAoHdIo41/tyjNTIn96fvkqmS6BNTmoCb0zUIbnpHSjDIxEtPeyyDRQeikKD1BuCOMLCClj+g3LgDszZyJCWlJYCpDu78SeggypTh4vIkkC+YAXoCefCKplOG0BA8rfKOmqVBRUUloQixMlMG4QCMEkmCiUmYlUpfgWMp89fI18oEmCIMMgM8tx2EyT1oUmqCEqDcMwfm8YmKkoYEBTBgKcTS0eg9u8GRORNSB96hi4J35dC7fpKPbHGT5K8rlKX1oWvXp58oaiydoxO55H0hRpZP0woAa+hHM97Xomtv3iAQoOXo/wCUcoktSXtVjTLz/tA5eVjTWtDwH7QhsHVfZxgyvFpWpvu0FVA1TuD/AHGPT5pjivsqkJ7ubMA/IgFiLAq16iO0mQ64ITeSuuK0xPOLM0RSCXVCyYYoOhGXqfYIEVCp4MPWDTS4Jdqe6MxWczAH3cwJDcK/tEpv0UhCzUlTGScx1p0isZ8uaMiSkioZJBZy5djFHbEvvEy3G4dxfRQIB6PTzhbH2YjDS2Rui/xgbm3t6NsVXeQ2Kw4CglTENTiG9945/tGjDFJCf5pGRRBIYFnUrSgN9HHKNXFzu8nhBJOV6jm1OdvbFFeyFfxKnql0kglJypyh3Du7poYVvmkJqp7Uc1smWlUiYneZzmygO7ULO4YZSOL9YHsnaysNNzMFHKxqQxKi4f0PnyjotsKRLSpFEhqacGA52oIhs7saoEqUsWIKTZTs5atd0ekJVrBOem2iE3tEJhlkSVS110BzVTbL4re6Nrs2Q6lFQUcxdJcKAUQQ71YOw6QBeyUpyVDhzueTpqGN7CNmTstUuaJqgwUgJvVwddLG8LFyEjpSTTLW0MMqYnKDlazpdJsXNQ/rThBNmo7qWO9KStS1ORxWSpg+mgHKL2GOZ0nUeXSK2M2SqYZJKm7pQUQEvmqGrozN/wCRi6jneuS0uB52ElhQmEJBpW1evGD4ioBrStNfq8U9tYvuO73MwUvLTTdJcDy9Is4HaUuaBlUku7VFWLFuNYdOLbXZtrSsLLXmHWBy0VPP4Q0ndWpOniT53Hr74qY2cpDqSM3IesNvpWwqFukXJssKPsilNwykk0oNYs4EqKRmDG7RPHLIVLSOBfyY24XjWmrDtp0UEiJiJ4lGVbREQyEZn9qZAXhFKP8A2lJXrY7htX8Q9I813Shipg4ymtd6mmvPjHrc+VnlTUfmlqHnlLe1o8oUp5dEAtoDbeNuLQ1FNN4os9xL+lQob+D5p9T8oUD9Fa+zFYuq1nueNogSSk2uaOYdJqd6jAMVNqYgoMiitTYvxhRez1T7N0Ng3/Msm72CQz+UdIqMH7Ox/wBCmr76q+cb6hD9HO+Spil5UkmAKSUpBGrHlBsdLzIUOIins3FMjIpzlpz9NRCPmmPHiwe0NpJSl1A3agdzdqdIxNi4rEKlqmTU5T3hKQR+B91J5mo8xHTrKDQZTyNPfHI7ZxM/vFAKAlpIZspBS28Dq7/CJTko5ZWPFUaO0NtSkSysqoKZQzk2ZuMNMnqzJSHIKX/uI5jGbGmzUKMtIc1IKmKm1D0o0dJJSTMCyWdDBPG/15Rz255GW1LBRx201YeZm7t0BsxBq5NC3kaax0OI2sClJKCQpnUBYM4J4D5xTnK3CSA4FvdaI4raMqUACklJ0rVgVGvRPnFL2YJ6s1Sxk5vaOIImhSklXdzgzEEkoUFUD8ABpYvHU4nBGcQRMIyhk8OBcEOTx5Rn4VMucSpglRQCHJNKqAJfnp8BGwysgUQKVLUemUEjWgby5QsY3fob8l5GVsfaCZeNTLUhQJBAzF01UPCNKg6cOkdntKYFpDKylJcc+I6ftGAcdLUoqYFmNaMWbyt74NOxiDlUopdNtfJPOggb1GLVl5QU2mlX/S2raglqAVcNbo9vONeRNSsO4NiOukcqvBTFTRMYhKi6nYlNBZIDl6njFzae1k4QISATmzFtWpvO9OjVrZo0Jyi3u4OXUSRY29jUIKQojxU1r8heOOlSpoxRmLCpctW6RxYpUEjQuXLjnxjW23MlrlIWSUqmKzygzkk1I/prUv8AKLOyMbLUEyJjEpZTULPW12B+mjSalKroRxk1a4CbOnYppk2aQUOydNaEAWB51i5hMUlVyHNxGiuT92tKahQo1ucc/wDwwch969RoX+PuirThRTSS20bRxstDVryr0hjMAUZhudOA4RgpwZdwSFWHTV+kExUtRoVFoeMpNcBaXTCycSZkxS9LDy1jQEUcJLaLyYpEnLks4LxDrHkk6XkSsZzQqDuaspQr7o9awniHWPKsbQzzkLGZMo4qy11+PnDsOn2P3h4woj3qeHtMKMW/RhqAOYgE0ANB5W84ErKJdQW3tOr3g1Q9BQi4MDmElFhyAfyHK8IKerfZur/pCn8sxQ9iT8Y6RYjivsuxFJ8vgUrpzBSf9ojuFCKLg5pclScIylSBmPSNmYIz8Qli8K0FMxhMm0SpieY+UZu3MEQAovd20dx+0b8xO8lTNYseBuIPtaQFoIAd006iOScOTpjqVRRngJLpDJLFmDCmkCxeIGQqZJKDmqLAByx9bQDAlS5YdTLS4PBQGvmPa8U8ejOBLCnmJOZmI3bMdLGA5vlAapFns3tBOJMxwWegJtQUpfjXjE9t7LmLQnIag2LWIIIOli0Vey2CEhShmKioOXSwDUDVPH3R00maFEg66XgrzjkRquTDlySUkAEAaDRqNSNfBYTNhMpKQU5i7liAc6XYuRUa++KGF2ghEwpU7JUcwpWhGtxF7s9tVU3v88tSU5qJUKFJGVgbKs5b80DRjG+TSi4p0Y2yMcJm6plOCU5gT0d7jh5RtYTZctK+9CSVsA12Z/CDbU0hTtmS0LzSwApQpSga1Bz4Xi9sMzFZkrABH4uflxjKCUlFiwnKEavkpTttqkLlpUgKMxJWMpICUhruKmoGkZ/a1UuctKgCFCRnuxAUTlSWoa+x+UdTiJQWQFgEBhUC/pq/sipi9nplqmTgkqWpCQEgUAlggBIGvICH1NNuDVixVvJxGN2kQZQUl1ZGSDQIFEJoKtuktqwi/szYeWdnCnBWFFxUl+L2FaNFfbuFmLWhK5YSqYAXyuUlLnK4tWtxwpWOs2LhcslJVcDrX+8c0YtypsaKSW15oMp0l3KaOfoRUXVRTUG4U1wYuzpZMyWseHIvN5ZfnFdCRLly0GqrAfXpFZXddFFwEQhqNSATpdYnNxA7xhxb0Z4JMDkx0QkmqJtUBlJg6YikQQCKIVh8H4h1jyZZmKEzfYkqIVu/iKiNeDekepTpuSVMX+WWs+YSW9rR5QUSxLmJyqbeJDV1fWzvrrDD6fYXuucNFfOOJ9sKBgv5ezOSDV1O51VyECW+UDPcXCoMSk5mBcly4Adm4QJWXKkMpiBRhyhbEo6j7PsZ3eNSCQ01KkeIGoZSf9pHnHq6xHg+Fnd3PRMSDmSrMmmqW/t5x7rhJ6ZstExJdKkhQ6EOIpFkNRU7ITBFOehxF6YIAtMBiozjIoTqPdrB5Xh5xOaGSSLxTw5LObgeyIzwykcmVjgJCipnSo253b1cxVm4+WEqmcQAw8V28r+zWN3GyBPQUEdRryIjnUbPSZZlLBIG81UkgXPtjkk3F44KeTLOyMf3snNTO5Ba1D7KAQbDS1FQMtzrSo9eEEwHZWXKqlSwhaWUgE7zsQa1SaEU48o6GSgISyEZQT9ExdabkvIRvFMxl4GTLVnnKTmJdqAeephto48SnWA7BgAL8qWHOL+I2UmYp5jEDh1qCGYiggkzZ6ClVAzVer0bWG2yp7VRt3tlHY01U8qVQEKFK+GhIfjUxr4TMHNq+6KmwlIlpMtAALlxV341jUAYOYaEU0mLclhkxK1c+cBx09gAFZSdTwvBcPMf4RlbVWFqUlO7MAYEuztTro4HONqPxwGKtlrDSwqubN0+cSUQA1ki5J9YBhZRlyt7XxGo001d2irMnqIctLT1ct1iVqMcrI+22aEyYEijeZaKxkhKu9mKJNkjQDkPiYBhFpNE7xbxEachGcrDzF986i5SU1826dIVyxdB2mjh8cD4UpCXLAMXqak8TeLhHCMPs/gljNmASCaJFgAAl/ZG7FtG2rZOTXRECJAQ4ETSmLoQye1k/JhSkXmLSgeuc/7W848/TJWy91D1YZSzMGpHSdu8UlWIlSszd2hRIr4l5C/UAS/Uxy8tCSZic5yveoYsjzgstBYKmf8ASn/KflCis0r/ABf90KAHAi+qUs5ZwfWBqzMN0PSjFtHgx8PjBNTVVqxFWm/Slc3Dm/08IEE5zWTY1bpHpf2Y7VK5S8Ou8oui9UKrrwU48xHmyk18YsbKvUVi3sHaS8PPTOC3KVVSVXSQAoNzHtYwyEkrWD3BaYCpMEwmJROlpmILpWkKBHA1hyIZkDOxcslJAvpGJgJi88wlPhYAHm7j2R060xSmymJOhZ4hq6d5Hi8gGTMYhRQQXtyiM9cpJBVVVaszeUZu0TNlLCkMUm4sQOPPpF7A41E4MAM2qTf945U812XrF9Af/wCwpUxmGRqGrg89G90a+HmuOMVe7Ad0+QHxiuMSsKdKWHA/VIeOo0/JgcU+DYKxw9IFimSgmrCtIgjEIWQCrKo2BLdesKdLygkgnp8o6LtYJVTyZfZzF5wFsxdQIPIkedGrHRzKilo57B4lJWru9GcGkaks5a1Cb8W9IXSdRopqK3ZzuzNrTU4somqJZak5SbguEFrapMaC8UtCiBlUXcgkPetPjxiGKwkszO9SFZ3BzWAaxbjSBSsNKSpM1symICuvv14xzSu6+zaMXFO+zVxEkzCFqWcorlszaMOMDxO8GI4trA52OUjKUozZnqTZtGi0J6iElIDG/wAorGUf2FplfZ2FI93rF6Zh07w4384kVnRn04CJp4+nOLwgkiUpNsAhBD2b2/2tEhDxICKCjAQp89MpC5q/DLSVHoA7dTbziaRHOfaHOIwyZYVk7wqKjaiAGHR1A+UEyVs43G4pc2aFrAdZKiXNDdm4XA6CIy5tVDIxdwM16DV6Gvshp5IMshfHdcG4Jf3+sTlSyFLJmOaMXFKWNeT+cDJ04OedX+CP8/7Q8W+6mf8A2T6I/wCUKMCyutKMpIdg5LjmXsYZWRgGUz2YcOsFMyh3EuAWcv77PCU9Dl1s5YUNfbCGAd2kGoNnDDSGyJOZnd9QOA+EHCnJGUAMKi+vCIOzgpFyz+j1jWajsvs37Qpl5cLMJCV1lk0ZRunzNRzJ4x6SRHgBdgWYhrONR7mj1HsP2q/iAJE0tOSKH86Rr/UNR58WdMjOHaOrIgS0RYIiChBZNGVOw6SQFB0vrFbbezQQFBNqUA+voxsTpTiKuIxRlIUVJKmSTSuZg7NxiEtONOysZO1Rz+HTMBIzLAZrny1jawMxKZSBMVv5Rmua6wTAzZc+UiaEkZw+VYYirQX+HS7tVmeJw03F2h5y6ZnzhKd1JB5qDmBq2uUUQ5GgIJi4vCpEV1qloqBXzJ8oZxfugJp/ZOYkAZ8oSogEgUrdvaYsT547o1qQw6mkZWDQqetXeJUlCWyg3PFRPGgi+rBpO7ce6ApPpYGcPfJR2UCQJaySkgCtwRS8aCsMQhIJqASfhEThu6IDPrm4jTzgUrFlRZCSQ5Cj+UgPUEuQbUeEiujSlmwqJDSUpJJIN9TfWD4aVlQBZy8Tw6FG49YsZYtDT7JymDTJ4mnAfVokpLlyzhwC1gdPYPSJwmixMiBEgmJARIJgpGGAjB7cbM77CqUElSpQUoJSASUkbwANzQHyizj+0OHlTRJUo5zdgSE2G8dDUUjVkzXYgwTZWTyBRQDLJd6sWBDMo68oeWlPeKYKYAZnAqWVz5COp7a7AUkpnSUp7oq+8DF0EggKDfhJIfh505cTl94oFCbbtD+q/HSBR0RluyjO7jD/AOHM/wAv7w0X+8m/4Uv0MKDQClkUzVzNcgU8gSIYoU9z6Dgf29IGEIyhiMtBZXK4vEpmQgORR2or61MRHHKVVroKDjUvEQlTVPG/0YZKUBVSM1NDz8uMRTLQxIbUmiuJeMbJBaVWc6V9ISStKgpKmUHIKVVdwxfk0OtKMrPRxp9H2wNctNHOlGe1B8IID1Psd2vGIAlT2TOFAaAL6cFcvTgOsIjwBKQSWNX9wDW8o7bs128MtIRiSVpAou6h1H4hzv1hlIlPT7R6MREVJhsFi5c5AXKWlaTqC/10ghENRID3Y4QxTBiIiRAoNlWYh4zsTIIS9q/H5RsFEDmSHDGFatDRlTM2VLmZCQWNG11rFxEou13uYgMKpLtXrw0gkpC3tlpE1F8Fdy5C4ggnKDb94jKlBL5UgOXLanjBkSWieWKpEWyAiQEO0SEMAg0OBEmh2g0CxgmOV7Y9qBISZUlQ70kJKnG45AIH66+XWJdt+0SsOO6QF51IzlSQaJJKWSfzUNdA3EN5sVpEtJKVHMeAoXHi1H7QGysIdsspSO8SorLlJPiJ/KSerx6R2Ows2XI+9JIKs0sEuQggM9KVzECtCOgyezXZcKUnET0EMHQhVy5BzKFwKUT6x2U2alCVLWcqUhyTp8+msZIGpO8IfFz0S5a1TSBLCSFPqDTL1LsOZjyOWHWSVuco/F4b183PpGr2k7QnFd2QlSZYUDLTQ8s6mrmYkMLO3EnKyJVNok+FyWAcPzv+8Zjwi0Jx/i/6zCh+6l/q/wAqPlCgDZMsLDE92rSmY8vnCXMG7R8wNAqosKtBUhbG2ZxUpo2tP2hlKmMli9K7t7cqaxMYjmBUxDc1K5c4iicC+6zA/i6+jtB1BYUWLJsKDgA/rWIpTMYku7btBq/Tjw0jUb+ASsM7C7Nn5E31iC1W3dBZVq8r6wcpmkUIzPU5Rz5NwhTAsMzgMHcC71s8MD/SvZRGUU1cGzCnDWBpqknLawe7xaCVO5cipAAF/feBJQtiDemgfTnzgGJ7P2tOw5zyCUKeoBcG902No73ZP2iSyoIxCCgt/MSCU+Y8Q9sefTQrKGcHUsK+2IzJSs6S9OFK3D9W5QbYrgme64PGSpwzS1pUOKSD7rQfJHgeGmTUKWpMxSSxIKSzeIs4NNI38B21xslAeYiaxvMao4Oli/UmGUib0q4PXMsNljhcN9oxcJmSBUfhWH1slQ5cY05Pb/CkkELSRdwkt1yqPODaF2SR1GWE0c6O3eBy5u8LAs+VTPweGm9u8EG31ObDKQTfi3AxrQNsvR0bQsscjN+0XDOoIQtRSHL5APPeJHpGPjPtImlJMuXJQNFKWV+7LX1jWg7JHo4RGdtHbeHkUXMGb8id5X+UW82jyzafaLFTVoz4hTE/y0qEsKuCCEgEhuJNoyZaBnmsupBfe8LhZ4U/aBuHWl7PRz9oEsuRJm5QWrlfXQFtDrHRbM2tLnpzS1PxFiOojxUSU9wxmHLmO+FX8VH5EmNDDYpcqbLmomZVcHuCVOCNR8oykF6arB61tfZcvEoyLoQ+RYAJST1uOI1jE7Pdku5OaepMxQLpCRu3oog62YWHOL2wNuy8SkgEd4nxpeo59KGNXET0S0KmTFBCEB1KVYD601hiVtYJzZiUpK1qCUpqVHT64R55t3bk3ErUAMspP8tBBr+tf6r0sAepIu023ziZqAFZZSXKZeYAm47xYa/AOwBOpeMWUnfXvu7VKrU6UtAbKwhXIkZ1S0OBQjNunQpJIpTWDrzJmJDDKzA5WNMocxWYdynfsRXN4mUGuK2bnB0N3iSSCcp3Sr+mrdW9YGSmCeWb+n/8z8oUJx+Yf54UGmLgzVAM+cM987A318vZDqAITvC1s97VbXSBqUjKHzNmJFE8Dw0oYmsIBS4ILApYDiSDXyiQ4SSkBbuDxBVyGjU0MDRLDeJwzPm6atDyQlS1EAlVSokAajh5RCUpAQWCwktQBPJvfGMTWlOUbwZzV78vfpDd0kEHMBa7nU8GhKCcoLEgu1Evq78PKHWxUKKcsAWHBgHMExEIBU7g8Wca8+TwyZSQhQCgzjQuLc+kSCgCpkqspyKPelLvEA2QryFnbLR7jQesYwGdKSyHUBwcKLmlq0v7YaclCpzuM7MwChRurawWdNSBLdCmNnJ3ag69YS273LlcgDeCjwA0gB+yuhMv70JNC+aiuJe/nAZsmUJIKjuZi3iqd/nFuStLLOVqWK7uD6QOYr7twi5IbOzX18owKHnJSqdLF1syQBcAK4avmiKcgXNYkUIVQWc8dbxanLaYgAAhnzBVvEpgONvWBoVvzQUgMC294rhqWNvWDYaKwly+4zZVZMzUAd68aQSYElcoMoksBRLDQAw4We7cS0uVGjjmL8aQaer+WAkEEAknQly1dbQLNQEJSJkwMoEOFUTXpEUpQZJOVRS5DBKX10trFiWo51DIAGLNryLRHeKFHukZibH+/KMYU1iqWkglVgWDC9Cfq8El5UzJoZQoc1AynzOA19fWFMV/LZII1JSaXo/pBJb94oFAAYsySXvfjGs1FdMtHcFWRWTMQzJdxmox6+2DzAFKlgglRYAsOBDcuEMgq7tX3aMzmjFvS8Emu0tkggs5KS4vRzzaCmag+CxXczVqRnSpIckBNSCosKcjfjFjbfaCZipAVOCu7B3UJSPEMwcirltedLxVlpOdTpAGXdZJOY1oYCVTO7UyEZ3NClTC+lxRoNi7ck5ygZiAyis2UQGsRfSCy5iM8zKFgMHomt/lEZylAoZKSm5JSXDgln6kROWVZ1OlI3d0BKt7xCvrBMwACe4zFKmzUDJdwo3GjUtFmeypiWClKINWDN8LeyIHvDKUMiMzmjFmq1NNIJOUUlBCQU1ckEFyCRX0jGD5Jf5Vf6IeJZj+UehhQcGpmQrwfX6ohg//AFT/ALYUKJLgZ8kMXc9D7hCR4FeXvTChRjLkqI08/fF1XjH9MKFDLkX4sZP4/wCk+5UTR4YUKD2Z8Inh7J6f8YJN8Q+tRChQFwF/mSTYf0iIyrHr8TChRmFcAzYdfhBZni9feYUKB2D4jSvxdT8YeZ4R1EKFB6D2icvxCFJuuFCjdAfLFO8I6j4QVPiHSFCg9m+JGVdXn/6xKZ/LT5fCFCjLgz5QZHiT0iCLr8/cIUKB6B2yE7wJ+uMWE+P/AMYaFDdg+INP/c8/eYfF+FPl7jChQehvkv0WYUKFACf/2Q==" alt="크림 파스타" 
+  class="max-w-full h-auto mx-auto rounded-lg" style="width: 700px; height: 500px;">
+</div>
+<h2 class="text-xl font-bold">만드는 법</h2>
+<ol class="space-y-2">
+  <li>
+    <strong>재료 손질하기:</strong>
+    <p>
+      먼저 양파와 마늘은 잘게 다져줍니다. 베이컨은 적당한 크기로 자르고, 버섯은 슬라이스합니다.
+    </p>
+  </li>
+  <li>
+    <strong>파스타 삶기:</strong>
+    <p>
+      큰 냄비에 물을 끓이고 소금을 넣은 후 파스타면을 넣고 포장지의 안내에 따라 삶아줍니다. 면이 익으면 체에 밭쳐 물기를 제거합니다.
+    </p>
+  </li>
+  <li>
+    <strong>소스 만들기:</strong>
+    <p>
+      팬에 올리브 오일을 두르고 중불에서 양파와 마늘을 볶습니다. 양파가 투명해지면 베이컨을 넣고 바삭하게 볶아줍니다. 그 후 버섯을 넣고 살짝 볶아줍니다.
+    </p>
+  </li>
+  <li>
+    <strong>크림 소스 완성하기:</strong>
+    <p>
+      팬에 생크림을 붓고 끓입니다. 소금과 후추로 간을 맞춘 후, 파마산 치즈를 넣어 녹여줍니다. 삶은 파스타면을 넣고 소스와 잘 섞어줍니다.
+    </p>
+  </li>
+  <li>
+    <strong>마무리:</strong>
+    <p>
+      접시에 담아 다진 파슬리를 뿌려 완성합니다. 뜨거울 때 먹으면 더 맛있습니다.
+    </p>
+  </li>
+</ol>
+<p>
+  크림 파스타는 이탈리아 음식 중에서도 가장 대표적인 요리 중 하나로, 집에서도 쉽게 만들 수 있어 가족들과 함께 즐기기에 좋습니다. 크림과 다양한 재료의 조화로운 맛이 입맛을 돋우며, 풍부한 영양이 가득한 이 요리를 맛보면 행복한 식사 시간을 보낼 수 있을 겁니다.
+</p>
+
+      <div
+        class="flex justify-between items-center py-6 border-t border-b border-gray-200 dark:border-gray-700"
+      >
+        <aside aria-label="Share social media">
+          <a
+            href="#"
+            class="inline-flex items-center py-2 px-6 mr-2 text-xs font-medium text-gray-900 no-underline bg-white rounded-lg border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            <svg
+              class="w-3 h-3 mr-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 8 19"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Share
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center py-2 px-6 mr-2 text-xs font-medium text-gray-900 no-underline bg-white rounded-lg border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            <svg
+              class="w-3 h-3 mr-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill="currentColor"
+                d="M12.186 8.672 18.743.947h-2.927l-5.005 5.9-4.44-5.9H0l7.434 9.876-6.986 8.23h2.927l5.434-6.4 4.82 6.4H20L12.186 8.672Zm-2.267 2.671L8.544 9.515 3.2 2.42h2.2l4.312 5.719 1.375 1.828 5.731 7.613h-2.2l-4.699-6.237Z"
+              />
+            </svg>
+            Tweet
+          </a>
+          <button
+            type="button"
+            class="inline-flex items-center py-2 px-6 text-xs font-medium text-gray-900 no-underline bg-white rounded-lg border border-gray-200 focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            <svg
+              class="w-3 h-3 mr-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 19 19"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"
+              />
+            </svg>
+            Copy link
+          </button>
+        </aside>
+        <div class="not-format">
+          <button
+            data-tooltip-target="tooltip-save"
+            class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-gray-400 focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600"
+            type="button"
+          >
+            <svg
+              class="w-4 h-4"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 20"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m13 19-6-5-6 5V2a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17Z"
+              />
+            </svg>
+          </button>
+          <div
+            id="tooltip-save"
+            role="tooltip"
+            class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
+          >
+            Save this article
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <button
+            id="dropdownMenuIconHorizontalButton"
+            data-dropdown-toggle="dropdownDotsHorizontal"
+            class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-gray-400 focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600"
+            type="button"
+          >
+            <svg
+              class="w-4 h-4"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 16 3"
+            >
+              <path
+                d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"
+              />
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdownDotsHorizontal"
+            class="hidden z-10 w-36 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
+          >
+            <ul
+              class="py-1 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownMenuIconHorizontalButton"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Mute this author</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Report</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+    <aside class="hidden xl:block" aria-labelledby="sidebar-label">
+      <div class="xl:w-[336px] sticky top-6">
+        <h3 id="sidebar-label" class="sr-only">Sidebar</h3>
+        <div
+          class="p-4 mb-6 rounded-lg border border-gray-200 dark:border-gray-700"
+        >
+          <h4
+            class="mb-2 text-sm font-bold text-gray-900 dark:text-white uppercase"
+          >
+          Sign up for our newsletter
+          </h4>
+          <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">
+            저희가 소개하는 레시피를 꾸준히 받아보고 싶다면 이메일 주소를 입력해주세요!
+          </p>
+          <form action="#">
+            <label for="email-address-icon" class="sr-only">Your Email</label>
+            <div class="relative mb-4">
+              <div
+                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 16"
+                >
+                  <path
+                    d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"
+                  />
+                  <path
+                    d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"
+                  />
+                </svg>
+              </div>
+              <input
+                required
+                type="text"
+                id="email-address-icon"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-9 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="name@company.com"
+              />
+            </div>
+            <button
+              type="submit"
+              class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 text-center w-full"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+        <div
+          class="p-4 mb-6 rounded-lg border border-gray-200 dark:border-gray-700"
+        >
+          <h4
+            class="mb-4 text-sm font-bold text-gray-900 dark:text-white uppercase"
+          >
+          팀원 소개
+        </h4>
+        <div class="mb-6">
+          <h5
+            class="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white"
+          >
+          202434755 김현승
+          </h5>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            메인페이지 제작, 로그인 및 즐겨찾기 페이지 만들기
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+          >
+            
+          </a>
+        </div>
+        <div class="mb-6">
+          <h5
+            class="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white"
+          >
+          202434793 오윤성
+          </h5>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            서브 페이지 제작 (레시피 추가하기, 커뮤니티)
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+          >
+           
+          </a>
+        </div>
+        <div class="mb-6">
+          <h5
+            class="mb-2 text-lg font-bold leading-tight text-gray-900 dark:text-white"
+          >
+          202434842 조재희
+          </h5>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            서브 페이지 제작 (레시피 소개하기)
+          </p>
+            <a
+              href="#"
+              class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+            >
+             
+            </a>
+          </div>
+        </div>
+        <div>
+          
+          <!-- <p
+            class="text-xs font-medium text-gray-400 uppercase dark:text-gray-500"
+          >
+            Ads placeholder
+          </p> -->
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<aside
+  aria-label="Related articles"
+  class="py-8 lg:py-24 bg-gray-50 dark:bg-gray-800 antialiased"
+>
+  <div class="px-4 mx-auto max-w-screen-xl">
+    <h2 class="mb-8 text-2xl font-bold text-gray-900 dark:text-white">
+      Read next
+    </h2>
+    <article class="flex mb-8">
+      <a href="불고기.html" class="shrink-0">
+        <img
+          src="https://i.namu.wiki/i/bMHb3V4BTTXiMpZzhbzwo0ieWFIbKLqhGXVa4niQ4m-N-43wf1eHBq_-VU9a88sXJWIEKR3Z8OVCIAh5G6GFQH2r9Fv-kbq-s7tJ5X9HLUmWDOoBk-gPpMjQ5YILUmVdWlOhRk5Bcu8UEH1V4fUO6w.webp"
+          class="mr-5 w-32 h-32 max-w-fullalign-middle rounded-full"
+          alt="Image 1"
+        />
+      </a>
+      <div class="flex flex-col justify-center">
+        <h2
+          class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white"
+        >
+          <a href="불고기.html">불고기</a>
+        </h2>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          불고기는 여러 동물의 고기를 얇게 썰어 양념으로 재운 뒤 불에 구워 먹는 한국 요리의 하나입니다.
+        </p>
+        <a
+          href="불고기.html"
+          class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+        >
+          전체 내용 보기
+        </a>
+      </div>
+    </article>
+    <article class="flex mb-8">
+      <a href="김치찌개.html" class="shrink-0">
+        <img
+          src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEwMTdfMjM2%2FMDAxNjk3NTMyMDQ2ODY1.OL-d27f8ZcmfJIGz9l3PG20mbHKEbm9s29rtfzQCzsAg.vy7qQO-Jq47XYw1OTi0ctQByeTvKu7k_03AoIsncOv4g.PNG.yunzzi0227%2F%25B1%25E8%25C4%25A14.PNG&type=a340"
+          class="mr-5 w-32 h-32 max-w-full align-middle rounded-full"
+          alt="Image 2"
+        />
+      </a>
+      <div class="flex flex-col justify-center">
+        <h2
+          class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white"
+        >
+          <a href="김치찌개.html">김치찌개</a>
+        </h2>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          김치찌개는 한국의 대표적인 전통 음식으로, 매콤하고 고소한 김치와 다양한 재료를 함께 끓여 만든 깊은 맛이 특징입니다. 
+        </p>
+        <a
+          href="김치찌개.html"
+          class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+        >
+          전체 내용 보기
+        </a>
+      </div>
+    </article>
+    <article class="flex">
+      <a href="된장찌개.html" class="shrink-0">
+        <img
+          src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20230804_85%2F1691113282182YMMgv_JPEG%2F2892555991193608_1267704138.jpg&type=a340"
+          class="mr-5 w-32 h-32 max-w-full align-middle rounded-full"
+          alt="Image 3"
+        />
+      </a>
+      <div class="flex flex-col justify-center">
+        <h2
+          class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white"
+        >
+          <a href="된장찌개.html">된장찌개</a>
+        </h2>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          된장찌개는 한국의 전통적인 요리 중 하나로, 고추장, 된장, 각종 채소 등을 함께 끓여 만든 감칠맛이 풍부한 찌개입니다.
+        </p>
+        <a
+          href="된장찌개.html"
+          class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+        >
+          전체 내용 보기
+        </a>
+      </div>
+    </article>
+  </div>
+</aside>
+
+<section class="bg-white dark:bg-gray-900 antialiased">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <div class="mx-auto max-w-screen-md sm:text-center">
+      <h2
+        class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white"
+      >
+        Sign up for our newsletter
+      </h2>
+      <p
+        class="mx-auto mb-8 max-w-2xl text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400"
+      >
+      추가적인 정보나 레시피에 관한 질문이 있으시면 언제든지 이메일을 통해 저희에게 연락 주시길 바랍니다. 
+      우리는 여러분이 요리를 더욱 즐겁게 즐길 수 있도록 최선을 다하겠습니다! 
+      이메일 주소를 남겨주시면 우리의 레시피에 대한 더 많은 세부 정보를 제공해드리겠습니다.
+      </p>
+      <form action="#">
+        <div
+          class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0"
+        >
+          <div class="relative w-full">
+            <label
+              for="email"
+              class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Email address</label
+            >
+            <div
+              class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 16"
+              >
+                <path
+                  d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"
+                />
+                <path
+                  d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"
+                />
+              </svg>
+            </div>
+            <input
+              class="block p-3 pl-9 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              placeholder="Enter your email"
+              type="email"
+              id="email"
+              required=""
+            />
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+        <div
+          class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300"
+        >
+          We care about the protection of your data.
+          <a
+            href="#"
+            class="font-medium text-primary-600 dark:text-primary-500 hover:underline"
+            >Read our Privacy Policy</a
+          >.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-50 dark:bg-gray-800 antialiased">
+  <div class="p-4 py-6 mx-auto max-w-screen-xl md:p-8 lg:p-10">
+    <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+      <div>
+       

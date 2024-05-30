@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="mainpage_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="mainpage.html" class="flex items-center" style="text-decoration: none;">
+            <span
+              class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+              style="font-size: 1.5rem; font-weight: bold; color: #007aff;"
+              >Recipe World</span
+            >
+          </a>
+          
+        <div class="nav-and-auth">
+            <a href="즐겨찾기.html" class="home-link">즐겨찾기</a>
+            <div class="auth-buttons">
+                <a href="login.html" target="_blank"><button class="login">로그인</button></a>
+                <button class="subscribe">구독</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <h2>Recipe World에 오신 것을 환영합니다.</h2>
+            <p>최고의 레시피를 찾고, 자신의 것을 공유하고, 커뮤니티에 참여해보세요</p>
+        </div>
+        <div class="container">
+            <button onclick="window.location.href='recipe list.html'">레시피 리스트</button>
+            <button onclick="window.location.href='add recipe.html'">레시피 추가하기</button>
+            <button onclick="window.location.href='이달의 메뉴.html'">이달의 레시피</button>
+            <button onclick="window.location.href='community.html'" class="community">커뮤니티</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Recipe World</p>
+    </footer>
+</body>
+</html>
+

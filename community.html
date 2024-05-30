@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 antialiased">
+
+  <header class="sticky top-0 z-50 shadow bg-white dark:bg-gray-800">
+    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+      <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+        <a href="mainpage.html" class="flex items-center">
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white" style="font-size: 1.5rem; font-weight: bold; color: #007aff;">Recipe World</span>
+        </a>
+        <div class="flex items-center lg:order-2">
+          <a href="login.html" class="text-gray-800 dark:text-white bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">로그인</a>
+          <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 lg:mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">구독</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pb-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
+    <header class="py-12">
+      <div class="px-4 mx-auto w-full max-w-screen-xl text-center">
+        <h1 class="mx-auto mb-4 max-w-2xl text-2xl dark:text-white font-extrabold leading-none text-gray-900 sm:text-3xl lg:text-4xl">커뮤니티</h1>
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400">다른 사용자와 소통하고 레시피를 공유하세요!</p>
+      </div>
+    </header>
+
+    <div class="px-4 mx-auto max-w-screen-xl">
+      <div class="mb-8">
+        <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">게시글 목록</h2>
+        <ul class="space-y-4">
+          <li class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">규동 후기</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">작성자: 김가천</p>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">진짜 맛있네요. 앞으로 자주...</p>
+          </li>
+          <li class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">제육볶음 레시피 좋네</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">작성자: 신컵4단계</p>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">근데 좀 더 매워도 맛있을듯...</p>
+          </li>
+          <li class="bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">점심은 역시 크림 파스타</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">작성자: 무당이</p>
+            <p class="text-gray-700 dark:text-gray-300 mt-2">하나도 안 느끼하고 맛있어요...</p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">게시글 작성</h2>
+        <form class="space-y-6 bg-white dark:bg-gray-800 p-8 rounded-lg shadow">
+          <div>
+            <label for="post-title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">제목</label>
+            <input type="text" id="post-title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="게시글 제목을 입력하세요" required>
+          </div>
+          <div>
+            <label for="post-author" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">작성자</label>
+            <input type="text" id="post-author" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="작성자 이름을 입력하세요" required>
+          </div>
+          <div>
+            <label for="post-content" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">내용</label>
+            <textarea id="post-content" rows="6" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="게시글 내용을 입력하세요" required></textarea>
+          </div>
+          <div class="flex items-center justify-between">
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">게시글 제출</button>
+          </div>
+        </form>
+      </div>
+   
